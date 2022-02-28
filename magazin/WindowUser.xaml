@@ -1,0 +1,35 @@
+﻿<Window x:Class="magazin.WindowUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:magazin"
+        mc:Ignorable="d"
+        Title="WindowUser" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="G:\Новая папка\это я\камера\рандом\test.jpg"/>
+    </Window.Background>
+    <Grid>
+
+        <ListBox x:Name="spisok"  Margin="0,0,400,0" Background="{x:Null}" />
+        <Button x:Name="dobavit" Content="добавить в корзину" Margin="405,10,203,355" Click="dobavit_Click" RenderTransformOrigin="0.5,0.5" Background="#FF45498E" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ListBox x:Name="spisok2" HorizontalAlignment="Left" Height="125" VerticalAlignment="Top" Width="323" Margin="432,122,0,0" SelectionChanged="spisok2_SelectionChanged" Background="{x:Null}"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="548,101,0,0" Width="104" RenderTransformOrigin="0.548,0.564"><Run Text="  "/><Run Text="Корзина"/></TextBlock>
+        <Button x:Name="delite" Content="удалить" Margin="432,252,228,113" Click="delite_Click" Background="#FF45498E" />
+        <Button x:Name="zakaz" Content="сделать заказ" Margin="623,252,37,113" Click="zakaz_Click" Background="#FF45498E" />
+        <TextBox Name="maile" TextWrapping="Wrap" Margin="540,359,45,27" Background="{x:Null}"/>
+        <TextBlock TextWrapping="Wrap" Text="email" Margin="426,359,299,27"/>
+        <Button Content="выход" Click="Button_Click" Margin="700,4,4,400"/>
+
+
+    </Grid>
+</Window>

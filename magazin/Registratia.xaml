@@ -1,0 +1,25 @@
+﻿<Window x:Class="magazin.Registratia" Name="registratia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:magazin"
+        mc:Ignorable="d"
+        Title="Registratia" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="G:\Новая папка\это я\камера\рандом\test.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Text="фамилия" Margin="217,31,424,346" />
+        <TextBlock TextWrapping="Wrap" Text="имя" Margin="217,93,424,287" RenderTransformOrigin="0.42,1.366"/>
+        <TextBox x:Name="fam" TextWrapping="Wrap"  Margin="400,31,250,346" Background="{x:Null}" BorderBrush="#FF1D3C98"/>
+        <TextBox x:Name="ima" TextWrapping="Wrap"  Margin="400,93,250,287" SelectionBrush="#FF0078D7" Background="{x:Null}" BorderBrush="#FF132A6F"/>
+        <TextBox x:Name="login" TextWrapping="Wrap" Margin="400,152,250,232" BorderBrush="#FF20175A" Background="{x:Null}"/>
+        <TextBlock  TextWrapping="Wrap" Text="логин" Margin="217,152,433,232"/>
+        <PasswordBox  x:Name="password"  Margin="400,207,250,175" Background="{x:Null}" BorderBrush="#FF1D316D"/>
+        <TextBlock TextWrapping="Wrap" Text="пароль" Margin="217,207,435,175"/>
+        <Button Content="зарегестрировать" Margin="215,264,435,123" Click="Button_Click_1" Background="#FF45498E"/>
+        <Button Content="вход" Margin="400,264,250,123" Click="Button_Click" Background="#FF45498E"/>
+
+    </Grid>
+</Window>

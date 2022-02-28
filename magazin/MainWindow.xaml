@@ -1,0 +1,21 @@
+﻿<Window x:Class="magazin.MainWindow" Name="vhod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:magazin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="G:\Новая папка\это я\камера\рандом\test.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="logg" TextWrapping="Wrap" Margin="432,148,184,222" BorderBrush="#FF2C2D69" Background="{x:Null}" />
+        <PasswordBox x:Name="passh" Margin="432,217,184,153" Background="{x:Null}" BorderBrush="#FF2E2F7B" />
+        <TextBlock Text="пароль" TextWrapping="Wrap" Margin="165,217,451,153" RenderTransformOrigin="0.494,0.48" />
+        <TextBlock Text="логин" TextWrapping="Wrap" Margin="165,148,451,222" HorizontalAlignment="Stretch" />
+        <Button  Content="вход" Margin="432,303,184,57" Click="Button_Click_1" Background="#FF476092"  />
+        <Button Content="регистрация" Margin="165,303,451,57" Click="Button_Click" Background="#FF476092" />
+
+    </Grid>
+</Window>
